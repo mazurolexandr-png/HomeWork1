@@ -14,8 +14,8 @@ print("\nСума всіх елементів:", total_sum)
 # 3. Знайдіть максимальне та мінімальне значення в масиві, а також їхні індекси.
 max_val = matrix[0][0]
 min_val = matrix[0][0]
-max_index = 0
-min_index = 0
+max_index = (0, 0)
+min_index = (0, 0)
 for i in range(3):
     for j in range(3):
         if matrix[i][j] > max_val:
@@ -26,7 +26,7 @@ for i in range(3):
             min_index = (i, j)
 
 print("Максимальне значення:", max_val, "Індекс:", max_index)
-print("Максимальне значення:", min_val, "Індекс:", min_index)
+print("Мінімальне значення:", min_val, "Індекс:", min_index)
 
 # 4. Відсортуйте масив по кожному рядку.
 sorted_matrix = [sorted(row) for row in matrix]
